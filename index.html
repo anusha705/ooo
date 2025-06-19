@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certification Course Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f6f8;
+    }
+    h2 {
+      color: #333;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .success-message {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+    .error-message {
+      color: red;
+      font-size: 0.9em;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Professional Certification Course Training Application</h2>
+
+  <form id="applicationForm" novalidate>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required />
+    <div class="error-message" id="errorName"></div>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required />
+    <div class="error-message" id="errorEmail"></div>
+
+    <label for="course">Select Course:</label>
+    <section>
+  <label for="course">Select Course(s):</label>
+  
+  <select id="course" name="course" required>
+<option value="">-- Please choose a course --</option>
+<option value="CSM – Certified ScrumMaster">CSM – Certified ScrumMaster</option>
+<option value="Project Management Professional (PMP)">Project Management Professional (PMP)</option>
+<option value="Certified Information Systems Security Professional (CISSP)">Certified Information Systems Security Professional (CISSP)</option>
+<option value="Certified Data Analyst">Certified Data Analyst</option>
+<option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+<option value="CSM – Certified ScrumMaster">CSM – Certified ScrumMaster</option>
+      <option value="CSPO – Certified Scrum Product Owner">CSPO – Certified Scrum Product Owner</option>
+      <option value="A-CSM – Advanced Certified ScrumMaster">A-CSM – Advanced Certified ScrumMaster</option>
+      <option value="A-CSPO – Advanced Certified Scrum Product Owner">A-CSPO – Advanced Certified Scrum Product Owner</option>
+      <option value="CAL 1 – Certified Agile Leadership (Level 1)">CAL 1 – Certified Agile Leadership (Level 1)</option>
+      <option value="CSD – Certified Scrum Developer">CSD – Certified Scrum Developer</option>
+      <option value="CSP-SM – Certified Scrum Professional – ScrumMaster">CSP-SM – Certified Scrum Professional – ScrumMaster</option>
+      <option value="PSM I – Professional Scrum Master Level I">PSM I – Professional Scrum Master Level I</option>
+      <option value="PSPO – Professional Scrum Product Owner">PSPO – Professional Scrum Product Owner</option>
+      <option value="PSD – Professional Scrum Developer">PSD – Professional Scrum Developer</option>
+      <option value="JIRA">JIRA (Tool, not a certification)</option>
+      <option value="CAFC – Certified Agile Framework Coach">CAFC – Certified Agile Framework Coach</option>
+      <option value="ASP 1 – Advanced SAFe Practitioner Level 1">ASP 1 – Advanced SAFe Practitioner Level 1</option>
+      <option value="Leading SAFe® – Leading Scaled Agile Framework">Leading SAFe® – Leading Scaled Agile Framework</option>
+      <option value="SAFe POPM – SAFe Product Owner/Product Manager">SAFe POPM – SAFe Product Owner/Product Manager</option>
+      <option value="SSM – SAFe Scrum Master">SSM – SAFe Scrum Master</option>
+      <option value="SPC – SAFe Program Consultant">SPC – SAFe Program Consultant</option>
+      <option value="SAFe RTE – SAFe Release Train Engineer">SAFe RTE – SAFe Release Train Engineer</option>
+      <option value="LPM – Lean Portfolio Management">LPM – Lean Portfolio Management</option>
+      <option value="SAFe® DevOps – SAFe DevOps Practitioner">SAFe® DevOps – SAFe DevOps Practitioner</option>
+      <option value="SAFe APM – SAFe Agile Product Management">SAFe APM – SAFe Agile Product Management</option>
+       <option value="PMP – Project Management Professional">PMP – Project Management Professional</option>
+      <option value="CAPM – Certified Associate in Project Management">CAPM – Certified Associate in Project Management</option>
+      <option value="PgMP – Program Management Professional">PgMP – Program Management Professional</option>
+      <option value="PRINCE2® F&P – PRINCE2® Foundation & Practitioner">PRINCE2® F&P – PRINCE2® Foundation & Practitioner</option>
+      <option value="PRINCE2® Foundation – PRINCE2® Foundation Level">PRINCE2® Foundation – PRINCE2® Foundation Level</option>
+      <option value="PRINCE2® Practitioner – PRINCE2® Practitioner Level">PRINCE2® Practitioner – PRINCE2® Practitioner Level</option>
+       <option value="CBAP® – Certified Business Analysis Professional">CBAP® – Certified Business Analysis Professional</option>
+      <option value="ECBA – Entry Certificate in Business Analysis">ECBA – Entry Certificate in Business Analysis</option>
+      <option value="SSGB – Six Sigma Green Belt">SSGB – Six Sigma Green Belt</option>
+      <option value="CM – Configuration Management">CM – Configuration Management</option>
+      <option value="PMTA-CSD – Scrum Developer Cert">PMTA-CSD – Scrum Developer Cert</option>
+      <option value="Certified Information Systems Security Professional (CISSP)">Certified Information Systems Security Professional (CISSP)</option>
+      <option value="Certified Data Analyst">Certified Data Analyst</option>
+      <option value="CCBA® – Certification of Capability in Business Analysis">CCBA® – Certification of Capability in Business Analysis</option>
+      <option value="ITIL 4 Foundation – ITIL Version 4 Foundation Certificate">ITIL 4 Foundation – ITIL Version 4 Foundation Certificate</option>
+</select>
+  <small>Hold Ctrl (Windows) or Command (Mac) to select multiple courses.</small>
+</section>
+
+    <div class="error-message" id="errorCourse"></div>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="10-digit number" required />
+    <div class="error-message" id="errorPhone"></div>
+
+    <label for="location">Location (City, State):</label>
+    <input type="text" id="location" name="location" required />
+    <div class="error-message" id="errorLocation"></div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <div class="success-message" id="successMessage"></div>
+
+  <script>
+    
+  const form = document.getElementById('applicationForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    document.getElementById('successMessage').textContent = '';
+    ['errorName', 'errorEmail', 'errorCourse', 'errorPhone', 'errorLocation'].forEach(id => {
+      document.getElementById(id).textContent = '';
+    });
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const course = form.course.value;
+    const phone = form.phone.value.trim();
+    const location = form.location.value.trim();
+
+    let valid = true;
+
+    if (name.length < 2) {
+      document.getElementById('errorName').textContent = 'Please enter a valid name (at least 2 characters).';
+      valid = false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      document.getElementById('errorEmail').textContent = 'Please enter a valid email address.';
+      valid = false;
+    }
+
+    if (!course) {
+      document.getElementById('errorCourse').textContent = 'Please select a course.';
+      valid = false;
+    }
+
+    const phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phone)) {
+      document.getElementById('errorPhone').textContent = 'Please enter a valid 10-digit phone number.';
+      valid = false;
+    }
+
+    if (location.length < 2) {
+      document.getElementById('errorLocation').textContent = 'Please enter your location.';
+      valid = false;
+    }
+
+    if (valid) {
+      // Send data to Google Apps Script Web App
+      fetch('https://script.google.com/macros/s/AKfycbxU9Qzbm-DYq-3bpme1iLDiY1BzZw-jJ7_RdP7e-ZJF4rEYDHNBE8qC_5zDIoktcnPwbg/exec', {
+        method: 'POST',
+        mode: 'no-cors', // Important for Google Apps Script
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          course: course,
+          phone: phone,
+          location: location
+        })
+      })
+      .then(() => {
+        document.getElementById('successMessage').textContent = `Thank you, ${name}! Your application for the "${course}" course has been submitted successfully. We will contact you at ${email}.`;
+        form.reset();
+      })
+      .catch(() => {
+        document.getElementById('successMessage').textContent = 'There was an error submitting your application. Please try again later.';
+      });
+    }
+  });
+</script>
+
+  
+
+</body>
+</html>
